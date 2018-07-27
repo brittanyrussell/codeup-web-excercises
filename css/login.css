@@ -11,7 +11,6 @@ body, html {
 }
 
 form {
-
     padding: 1em;
     /* This form should be separated from other elements by 1em */
     /* There must be 1em between the content and the border of this element */
@@ -39,21 +38,23 @@ fieldset {
 
 .form-group {
     width: 100%;
-    padding-top: .5em;
-    padding-bottom: .5em;
+    margin: .5em 0;
     /* This element must use 100% of the width */
     /* It should have a separation of .5em from elements on top of it and below it*/
 }
 
 .form-label {
     font-weight: bold;
+    margin: 1em 0;
     /* The text of a label must be bold */
 }
 
 .form-control {
     width: 100%;
-    padding-top: 4px .5em;
-    padding-bottom: 4px .5em;
+    padding: 4px 0;
+    margin: .5em 0;
+    /*padding-top: 4px .5em;*/
+    /*padding-bottom: 4px .5em;*/
     /* There must be 4px on top of the text and below the text of an input with this class */
     /* It should have a separation of .5em from elements on top of it and below it */
     width: calc(100% - 4px);
