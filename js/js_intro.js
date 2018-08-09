@@ -1,3 +1,12 @@
+"use strict";
+var myName = prompt("What is your name?");
 
-var message = "Hello, World!";
-alert(message);
+function birthday(name) {
+    var message = "Happy Birdthday " + name + "!!!";
+    console.log(message);
+}
+
+birthday(myName);
+var myDogsName = " Lady";
+birthday(myDogsName);
+

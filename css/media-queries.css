@@ -1,0 +1,146 @@
+@media screen and (max-width: 500px) {
+
+
+    .nav-links {
+        list-style-type: none;
+        /*width: 100%;*/
+        padding: 0;
+        /*padding: 10px;*/
+        /*padding-top: 10px;*/
+        /*padding-bottom: 10px;*/
+        /*margin: -10px;*/
+    }
+
+
+    li {
+        /*width: 100%;*/
+        text-align: center;
+        background-color: lightgrey;
+        padding: 1em 0;
+        margin: 1em 0;
+        /*margin-bottom: 12px;*/
+        /*padding-top: 10px;*/
+        /*padding-bottom: 10px;*/
+    }
+
+    .alert-info.hidden-on-desktop {
+        background-color: #c0ffff;
+        border: 1px solid black;
+        text-align: center;
+        padding: 20px;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    footer {
+        clear: both;
+        /*position: absolute;*/
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin-top: 2em;
+    }
+
+    img {
+        /*width: 100%;*/
+    }
+
+    .fb {
+        /*float: right;*/
+        height: 30px;
+        /*margin: -50px;*/
+        /*width: 30px;*/
+
+    }
+
+    .tw {
+        /*float: right;*/
+        height: 30px;
+        /*width: 30px;*/
+
+    }
+
+    #social-media-links li {
+        float: right;
+        list-style-type: none;
+        background: transparent;
+        display: inline-block;
+        padding: 0;
+        margin: 0;
+
+
+    }
+
+}
+
+@media screen and (min-width: 500px) {
+    .alert-info.hidden-on-desktop {
+        display: none;
+    }
+
+    h1 {
+        text-align: left;
+    }
+
+    li {
+        list-style-type: none;
+        display: inline-block;
+        padding: 10px;
+        float: right;
+    }
+
+    .nav-links {
+        float: right;
+        /*margin: -60px;*/
+        display: inline-block;
+        padding-right: 60px;
+    }
+
+    .main {
+        /*width: 60%;*/
+        posiiton: relative;
+        float: left;
+    }
+
+    .sub-section {
+        /*width: 40%;*/
+        position: relative;
+        float: right;
+    }
+
+    footer {
+        /*position: fixed;*/
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+    }
+
+    img {
+        /*width: 100%;*/
+    }
+
+    .fb {
+        /*float: right;*/
+        height: 30px;
+        /*width: 30px;*/
+
+    }
+
+    .tw {
+        /*float: right;*/
+        height: 30px;
+        /*width: 30px;*/
+
+    }
+
+}
+
+
+
+
+
+
+

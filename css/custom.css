@@ -1,0 +1,29 @@
+* {
+}
+
+
+.jumbotron {
+    background-image: url("../images/pizzaworld.png");
+    margin-top: 20px;
+
+}
+
+.title {
+    text-align: center;
+}
+
+h1 {
+    background-color: rgba(221, 221, 221, 0.51);
+}
+
+.cuscolor {
+    background-color: #d9edf7;
+}
+
+.textc {
+    color: #3c7896;
+}
+
+.grc {
+   color: #f7f7f7;
+}

@@ -1,0 +1,11 @@
+body {
+    font-family: fantasy;
+    text-align: center;
+    margin-top: 250px;
+    background-color: darkblue;
+    color: white;
+}
+
+li {
+    list-style-type: none;
+}
