@@ -24,7 +24,10 @@
     pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
     culpa qui officia deserunt mollit anim id est laborum.
 </p>
-
+<button id="button1">Change Header</button>
+<button id="button2">Change Color</button>
+<button id="button3">Change List Item color</button>
+<button id="button4">Finish</button>
 <script>
     (function() {
         "use strict";
@@ -33,16 +36,20 @@
         console.log(mainHeader);
 
         // TODO: Set inner html of mainHeader to "JavaScript is Cool"
-        document.getElementById("main-header").innerHTML = "JavaScript is Cool";
-
+        var listener = function() {
+            // alert("You changed the main header!");
+            document.getElementById("main-header").innerHTML = "JavaScript is Cool";
+        }
 
         // TODO: Uncomment the next line and get the sub header element by id
         var subHeader = document.getElementById("sub-header");
         console.log(subHeader);
 
         // TODO: Set the text color of subHeader to blue
-        document.getElementById("sub-header").style.color = "blue";
-
+        var listener2 = function() {
+            // alert("You changed the subHeader color!");
+            document.getElementById("sub-header").style.color = "blue";
+        }
         // TODO: Uncomment the next line and get all list items
         var listItems = document.getElementsByTagName("li");
         console.log(listItems);
@@ -51,14 +58,17 @@
         // listItems[0].style.color = "grey";
         // listItems[2].style.color = "grey";
         // listItems[4].style.color = "grey";
-        for(var i=0; i <listItems.length; i+=2) {
-            if (i % 2 === 0) {
-                listItems[i].style.color = "grey";
-            }
-            if(listItems[i].getAttribute("data-dbid") == 1){
-                listItems[i].style.color = "blue";
-            }
-        }
+       var listener3 = function() {
+           // alert("You changed the list item color!");
+           for (var i = 0; i < listItems.length; i += 2) {
+               if (i % 2 === 0) {
+                   listItems[i].style.color = "grey";
+               }
+               if (listItems[i].getAttribute("data-dbid") == 1) {
+                   listItems[i].style.color = "blue";
+               }
+           }
+       }
 
         // TODO: Set text color of li with dbid = 1 to blue
         // listItems[0].style.color = "blue";
@@ -69,7 +79,15 @@
         console.log(subParagraphs);
 
         // TODO: Change the text in the first sub paragraph to "Mission Accomplished!"
-        document.getElementsByClassName("sub-paragraph")[0].innerText = "Mission Accomplished!";
+        var listener4 = function() {
+            // alert("You are finished!");
+            document.getElementsByClassName("sub-paragraph")[0].innerText = "Mission Accomplished!";
+        }
+
+        var button1 = document.getElementById("button1").addEventListener('click', listener);
+        var button2 = document.getElementById("button2").addEventListener('click', listener2);
+        var button3 = document.getElementById("button3").addEventListener('click', listener3);
+        var button4 = document.getElementById("button4").addEventListener('click', listener4);
 
     })();
 </script>
