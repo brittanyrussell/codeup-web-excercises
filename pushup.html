@@ -11,47 +11,215 @@
     <!--<p>Paragraph 2</p>-->
 <!--</div>-->
 <script>
-//     "use strict";
-//     (function() {
-//         // Get the main heading h1 by id
-//         var mainHeading = document.getElementById('main-heading');
+//     // "use strict";
+// //     (function() {
+// //         // Get the main heading h1 by id
+// //         var mainHeading = document.getElementById('main-heading');
+// //
+// //         console.log(mainHeading.innerHTML); // Prints Hello World!
+// //
+// //         // Assign a new value to the inner HTML of the main heading
+// //         mainHeading.innerHTML = "Hello Codeup!";
+// //
+// //         console.log(mainHeading.innerHTML); // Prints Hello Codeup!
+// //
+// //         // Get the main section div by id
+// //         var mainSection = document.getElementById('main-section');
+// //
+// //         console.log(mainSection.innerHTML);
+// //         // Prints
+// //         // <p>Paragraph 1</p>
+// //         // <p>Paragraph 2</p>
+// //     })();
+// //     var summation = function(num) {
+// //         var product = 0;
+// //         for (var i = num; i > 0; i--){
+// //             console.log(product, i);
+// //              product += i;
+// //         }
+// //         return product;
+// //     };
+// //
+// // console.log(summation(5));
+// //     console.log(summation(10));
+// //     console.log(summation(15));
+// //     console.log(summation(20));
 //
-//         console.log(mainHeading.innerHTML); // Prints Hello World!
+// // function capitilize(str) {
+// //         return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
+// // }
+// // console.log(capitilize("dOg"));
+// // console.log(capitilize("HackerRank"));
+// // console.log(capitilize("Daniel Fryar"));
+// // var students =["A,B,M,K,P,T"];
+// var students =["A","B","M","K","P","T"];
+// var people = ["b", "a"]
+// function addStudents(arr, a) {
 //
-//         // Assign a new value to the inner HTML of the main heading
-//         mainHeading.innerHTML = "Hello Codeup!";
-//
-//         console.log(mainHeading.innerHTML); // Prints Hello Codeup!
-//
-//         // Get the main section div by id
-//         var mainSection = document.getElementById('main-section');
-//
-//         console.log(mainSection.innerHTML);
-//         // Prints
-//         // <p>Paragraph 1</p>
-//         // <p>Paragraph 2</p>
-//     })();
-//     var summation = function(num) {
-//         var product = 0;
-//         for (var i = num; i > 0; i--){
-//             console.log(product, i);
-//              product += i;
-//         }
-//         return product;
-//     };
-//
-// console.log(summation(5));
-//     console.log(summation(10));
-//     console.log(summation(15));
-//     console.log(summation(20));
-
-// function capitilize(str) {
-//         return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
+//     arr.push(a);
 // }
-// console.log(capitilize("dOg"));
-// console.log(capitilize("HackerRank"));
-// console.log(capitilize("Daniel Fryar"));
+// console.log(addStudents(people,"jj"));
+// console.log(addStudents(students, "br"));
+//
+// console.log(students);
+// console.log(people);
+//
+// // var sandwich = {meat:"turkey"};
+//
+// var pizza ={
+//     crust:'thin',
+//     toppings:3,
+//     hasBacon:true,
+//     howmanyToppings:function(){
+//         return this.toppings;
+//     },
+//     sauces:["bbq","ranch","orignial"],
+// };
+//
+// function selectSauces(something){
+//     for(var i = 0; i< something.sauces.length;i++){
+//         console.log(something.sauces[i])}
+// }
+// console.log(selectSauces(nasty));
+//
+// selectSauces(pizza);
+// console.log( pizza)
+// pizza["newObject"] = "goodSauce";
+// console.log("+++++++++++++++++++");
+// console.log(pizza);
+// pizza.sauces.push;
+// pizza;
+// console.log(pizza.sauces[0]);
+//
+// var students = []
+// var me = {
+//     name: "Hunter Houts",
+//     hairColor: "black",
+//     eyeColor: "brown",
+//     Birthday: {
+//         month: 09,
+//         day: 19,
+//     },
+//     laugh: function() {
+//         let laugh = "ha"
+//         return laugh.repeat(6);
+//     }
+// };
+// var student1 = {
+//     name:"John Doe",
+//     hairColor: "blonde",
+//     eyeColor: "blue",
+//     Birthday: {
+//         month: 01,
+//         day: 01,
+//     },
+// };
+// var student2 = {
+//     name: "Jane Doe",
+//     hairColor: "red",
+//     eyeColor: "green",
+//     Birthday: {
+//         month:02,
+//         day: 02,
+//     },
+// };
+// var student3 = {
+//     name: "Brittany Houts",
+//     hairColor: "red",
+//     eyeColor: "green",
+//     Birthday: {
+//         month: 01,
+//         day: 15,
+//     },
+// };
+// var students = []
+// students.push(me);
+// students.push(student1);
+// students.push(student2);
+// students.push(student3);
+// console.log(students);
+// console.log(students[0].laugh());
+//
+// var us = ["h", "a", "j"];
+// var them = ["y", "r"];
+//     function takeone() {
+//      them.shift();
+//
+//     }
+//     function takeone2(a) {
+//         us.shift(a);
+//     }
+//
+//
+//
+//     console.log(takeone());
+//     console.log(takeone2("brittany"));
+//
+//     console.log(us);
+//     console.log(them);
+//
+// var names = ['britt', 'kev', 'jj'];
+// names.forEach(function(element) {
+//    if (element !== 'kev') {
+//        console.log(element);
+//    }
+// });
 
+    var dogs = [
+        {
+          name: "Annie",
+          age: 3,
+          breed: "labradoodle",
+          sex: "female",
+            bark: function() {
+              console.log("barkbark!")
+            }
+        },
+        {
+            name: "Roxeanne",
+            age: 7,
+            breed: "Cocker Spaniel",
+            sex: "female",
+            legs: 3,
+            bark: function() {
+                console.log("Woofwooooof!!")
+            }
+        },
+        {
+            name: "Pookiepoo",
+            age: 2,
+            breed: "Chihuahua",
+            sex: "male",
+            bark: function() {
+                console.log("Yap!!!!!")
+            }
+        },
+        {
+            name: "Snoopadoop",
+            age: 2,
+            breed: "Cockapoo",
+            sex: "male",
+            nobleHound: true,
+            bark: function() {
+                console.log("Aroooooo!!")
+            }
+        },
+    ];
+
+    function writeOldAnimals(animals) {
+        for (var i = 0; i < animals.length; i++) {
+            // if (animals[i].age >=3 && animals[i].breed === "Cocker Spaniel")
+            // if (animals[i].age >=3 && animals[i].legs < 4)
+            // if (animals[i].nobleHound || animals[i].breed.includes("oo") || animals[i].name)
+            // {
+            //     console.log(animals[i].name);
+            //
+            // }
+            animals[i].bark();
+        }
+
+    }
+     writeOldAnimals(dogs);
 
 
 </script>
