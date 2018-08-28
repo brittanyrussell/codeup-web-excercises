@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Konami Code</title>
+</head>
+<body>
+<h1>Konami Code</h1>
+<audio controls style="display: none">
+    <source src='Roaring Lion-SoundBible.com-527774719.mp3' type="audio/mpeg">
+</audio>
+<!--<script   src="https://code.jquery.com/jquery-2.2.4.js"   integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="   crossorigin="anonymous"></script>-->
+<!--<script src="js/jquery.js"></script>-->
+<!--<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>-->
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<!--<script src="jquery.konami.js" type="text/javascript"></script>-->
+<script>
+    // "use strict";
+    // $(document).keyup(function(event){
+    //     console.log(event.keyCode);
+    // });
+    // var allowedKeys = {
+    //     37: 'left',
+    //     38: 'up',
+    //     39: 'right',
+    //     40: 'down',
+    //     65: 'a',
+    //     66: 'b',
+    //     13: 'enter'
+    // };
+    //
+    // // the 'official' Konami Code sequence
+    // var konamiCode = ['up', 'up', 'down', 'down', 'left', 'right', 'left', 'right', 'b', 'a', 'enter'];
+    //
+    // // a variable to remember the 'position' the user has reached so far.
+    // var konamiCodePosition = 0;
+    //
+    // // add keydown event listener
+    // document.addEventListener('keydown', function(e) {
+    //     // get the value of the key code from the key map
+    //     var key = allowedKeys[e.keyCode];
+    //     // get the value of the required key from the konami code
+    //     var requiredKey = konamiCode[konamiCodePosition];
+    //
+    //     // compare the key with the required key
+    //     if (key == requiredKey) {
+    //
+    //         // move to the next key in the konami code sequence
+    //         konamiCodePosition++;
+    //
+    //         // if the last key is reached, activate cheats
+    //         if (konamiCodePosition == konamiCode.length) {
+    //             activateCheats();
+    //             konamiCodePosition = 0;
+    //         }
+    //     } else {
+    //         konamiCodePosition = 0;
+    //     }
+    //
+    // });
+    // function activateCheats() {
+    //     document.body.style.backgroundImage = "url('images/mean lion.jpeg')";
+    //
+    //     var audio = new Audio('Roaring Lion-SoundBible.com-527774719.mp3');
+    //     audio.play();
+    //
+    //     alert("You have added 30 lives!");
+    // }
+    var kkeys = [], konami = "38,38,40,40,37,39,37,39,66,65,13";
+
+    $(document).keydown(function(e) {
+
+        kkeys.push( e.keyCode );
+
+        if ( kkeys.toString().indexOf(konami) >= 0) {
+
+            $(document).unbind('keydown',arguments.callee);
+            $("body").css("background-image", "url('images/mean lion.jpeg')");
+            // document.body.style.backgroundImage = "url('images/mean lion.jpeg')";
+            // var audio = new Audio('Roaring Lion-SoundBible.com-527774719.mp3');
+            //     audio.play();
+
+            $('audio')[0].play();
+                    alert("You have added 30 lives!");
+            // do something awesome
+            $("body").addClass("konami");
+
+        }
+
+    });
+
+
+
+
+</script>
+</body>
+</html>
