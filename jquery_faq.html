@@ -3,16 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>National Park FAQS</title>
-    <script   src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 
     <style>
         body {
             background-color: black;
         }
+
         h1 {
             text-align: center;
             color: white;
         }
+
         .fact {
             font-size: 20px;
             color: white;
@@ -26,102 +29,205 @@
             font-size: 25px;
             color: hotpink;
         }
+
         .invisible {
             display: none;
         }
 
         .highlight {
             color: black;
-            background-color: yellow;
+            background-color: lightpink;
 
         }
 
-        .button1 {
+        .btn1 {
             text-align: center;
         }
-        .button2 {
+
+        .btn2 {
             text-align: center;
         }
 
         .bold {
             font-weight: bold;
         }
+
         .blue {
             color: blue;
         }
 
+        .picture1 {
+            background-image: url("images/wrangell.jpg");
+            background-size: cover;
+        }
+
+        .picture2 {
+            background-image: url("images/sequoia.png");
+            background-size: cover;
+        }
+
+        .picture3 {
+            background-image: url("images/bigbend.jpg");
+            background-size: cover;
+        }
+
+        .frame {
+            border: 10px solid hotpink;
+            height: 250px;
+        }
+        #rightSwapBtn {
+            text-align: center;
+        }
+        h4 {
+            text-align: center;
+            color: white;
+        }
+
+        .buttoncenter {
+            text-align: center;
+        }
 
     </style>
 </head>
 <body>
-<h1>10 FAQS about National Parks</h1>
-<div class="button1">
-<button>Get the Facts</button>
-</div>
-<div class="button2">
-<button>Check this out 2nd</button>
-</div>
-
+<main class="container">
+    <h1>10 FAQS about National Parks</h1>
+    <div class="btn1">
+        <button type="button" class="btn btn-dark">Get the Facts</button>
+    </div>
+    <br>
+    <div class="btn2">
+        <button type="button" class="btn btn-dark">Check this out 2nd</button>
+    </div>
+    <br>
+    <br>
 
 
     <h3 class="name">Wrangell National Park</h3>
     <ul class="grab">
-    <li class="invisible first fact">This park is a beautiful place to go and explore!!!</li>
+        <li class="invisible first fact">This park is a beautiful place to go and explore!!!</li>
         <li class="invisible fact">Wrangell-St. Elias National Park is an 8,323,147 acre park located in Alaska.</li>
-        <li class="invisible fact">Wrangell-St. Elias National Park is larger than the entire country of Switzerland.</li>
-        <li class="invisible make fact">Between 1903 and 1938 the park's center - a boomtown called Kennecott - exploded because of the
-            areas rich copper deposit discovery</li>
+        <li class="invisible fact">Wrangell-St. Elias National Park is larger than the entire country of Switzerland.
+        </li>
+        <li class="invisible make fact">Between 1903 and 1938 the park's center - a boomtown called Kennecott - exploded
+            because of the
+            areas rich copper deposit discovery
+        </li>
     </ul>
-<h3 class="name">Yellow Stone National Park</h3>
-<ul class="grab">
-    <li class="invisible first fact">This park is a beautiful place to go and explore!!!</li>
-    <li class="invisible fact">Yellowstone was established on March 1, 1872.</li>
-    <li class="invisible fact">Yellowstone has more than 290 waterfalls.</li>
-    <li class="invisible make fact">Yellowstone was the world's first national park</li>
-</ul>
-<h3 class="name">Big Bend National Park</h3>
-<ul class="grab">
-    <li class="invisible first fact">This park is a beautiful place to go and explore!!!</li>
-    <li class="invisible fact">Big Bend National Park is considered to be the largest Chihuahuan Desert protected region in the country.</li>
-    <li class="invisible fact">fBig Bend National Park is home to more than 1200 plant species, including the desert marigold, pink bluebonnets,
-        ocotillo, lechuguilla, and rock nettle</li>
-    <li class="invisible make fact">angford Hot Springs are located in Big Bend National Park. The temperature of the spring is approximately 105 degrees Fahrenheit.</li>
-</ul>
-<h3 class="name">Sequoia National Park</h3>
-<ul class="grab">
-    <li class="invisible first fact">This park is a beautiful place to go and explore!!!</li>
-    <li class="invisible fact">Sequoia National Park was the second national park established in the
-        United States - in 1890. It was established to protect the region's giant trees from logging.</li>
-    <li class="invisible fact">Sequoia trees are naturally fire resistant. They have thick bark that can often protect
-        them from burning down. If they do burn their nutrients are deposited directly into the ground to feed other trees.</li>
-    <li class="invisible make fact black">84% of Sequoia and Kings Canyon National Parks is designated as wilderness. Most of the parks
-        land is not accessible by roadway.</li>
-</ul>
+    <br>
+    <h3 class="name">Yellow Stone National Park</h3>
+    <ul class="grab">
+        <li class="invisible first fact">This park is a beautiful place to go and explore!!!</li>
+        <li class="invisible fact">Yellowstone was established on March 1, 1872.</li>
+        <li class="invisible fact">Yellowstone has more than 290 waterfalls.</li>
+        <li class="invisible make fact">Yellowstone was the world's first national park</li>
+    </ul>
+    <br>
+    <h3 class="name">Big Bend National Park</h3>
+    <ul class="grab">
+        <li class="invisible first fact">This park is a beautiful place to go and explore!!!</li>
+        <li class="invisible fact">Big Bend National Park is considered to be the largest Chihuahuan Desert protected
+            region in the country.
+        </li>
+        <li class="invisible fact">fBig Bend National Park is home to more than 1200 plant species, including the desert
+            marigold, pink bluebonnets,
+            ocotillo, lechuguilla, and rock nettle
+        </li>
+        <li class="invisible make fact">angford Hot Springs are located in Big Bend National Park. The temperature of
+            the spring is approximately 105 degrees Fahrenheit.
+        </li>
+    </ul>
+    <br>
+    <h3 class="name">Sequoia National Park</h3>
+    <ul class="grab">
+        <li class="invisible first fact">This park is a beautiful place to go and explore!!!</li>
+        <li class="invisible fact">Sequoia National Park was the second national park established in the
+            United States - in 1890. It was established to protect the region's giant trees from logging.
+        </li>
+        <li class="invisible fact">Sequoia trees are naturally fire resistant. They have thick bark that can often
+            protect
+            them from burning down. If they do burn their nutrients are deposited directly into the ground to feed other
+            trees.
+        </li>
+        <li class="invisible make fact black">84% of Sequoia and Kings Canyon National Parks is designated as
+            wilderness. Most of the parks
+            land is not accessible by roadway.
+        </li>
+    </ul>
+
+    <br>
+    <br>
+
+    <h4>Pictures of the National Parks we just learned about!!!</h4>
+    <br>
+    <div class="row">
+        <!--Using Bootstrap-->
+        <div class="col-md-4">
+            <div class="frame picture1"></div>
+            <br>
+            <div class="buttoncenter">
+            <button id="leftSwapBtn" class="pictureBtn btn btn-dark">Swap</button>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="frame picture2"></div>
+            <br>
+            <div class="buttoncenter">
+            <button id="middleSwapBtn" class="pictureBtn btn btn-dark">Swap</button>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="frame picture3"></div>
+            <br>
+            <div class="buttoncenter">
+            <button id="rightSwapBtn" class="pictureBtn btn btn-dark">Swap</button>
+            </div>
+        </div>
+    </div>
 
 
-
+</main>
 
 
 <script>
 
 
-$(".button1").click(function(){
-    $("li").toggleClass("invisible");
-});
+    $(".btn1").click(function () {
+        $("li").toggleClass("invisible");
+    });
 
-$(".button2").click(function () {
-    $(".make").toggleClass("highlight");
-});
+    $(".btn2").click(function () {
+        $(".make").toggleClass("highlight");
+    });
 
-$("h3").click(function(){
-    $("li").toggleClass("bold");
-});
+    $("h3").click(function () {
+        $("li").toggleClass("bold");
+    });
 
-$(".fact").click(function(){
-    $(".first").toggleClass("blue");
-});
+    $(".fact").click(function () {
+        $(".first").toggleClass("blue");
+    });
 
-
+    $('#leftSwapBtn').click(function () {
+        var oldClass = $(this).prev().attr("class").split(" ")[1];
+        var newClass = $(this).parent().next().children().first().attr("class").split(" ")[1];
+        $(this).prev().attr("class", "frame " + newClass);
+        $(this).parent().next().children().first().attr("class", "frame " + oldClass)
+    });
+    $('#middleSwapBtn').click(function () {
+        var choice = Math.floor(Math.random() * (1 - 0 + 1)) + 0;
+        var frameChoice = (choice) ? $(this).parent().prev() : $(this).parent().next();
+        var oldClass = $(this).prev().attr("class").split(" ")[1];
+        var newClass = frameChoice.children().first().attr("class").split(" ")[1];
+        $(this).prev().attr("class", "frame " + newClass);
+        frameChoice.children().first().attr("class", "frame " + oldClass)
+    });
+    $('#rightSwapBtn').click(function () {
+        var oldClass = $(this).prev().attr("class").split(" ")[1];
+        var newClass = $(this).parent().prev().children().first().attr("class").split(" ")[1];
+        $(this).prev().attr("class", "frame " + newClass);
+        $(this).parent().prev().children().first().attr("class", "frame " + oldClass)
+    });
 
 
 </script>
