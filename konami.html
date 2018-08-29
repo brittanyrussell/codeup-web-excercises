@@ -89,10 +89,10 @@
 
         kkeys.push( e.keyCode );
 
-        if ( kkeys.toString().indexOf(konami) >= 0) {
+        if ( kkeys.toString().indexOf(konami) >=0) {
 
             $(document).unbind('keydown',arguments.callee);
-            alert("You have added 30 lives!");
+            alert("OOPS you tried to cheat!!!!");
             $("body").addClass("image");
             // document.body.style.backgroundImage = "url('images/mean lion.jpeg')";
             // var audio = new Audio('Roaring Lion-SoundBible.com-527774719.mp3');

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>National Park FAQS</title>
+    <script   src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+    <style>
+        body {
+            background-color: black;
+        }
+        h1 {
+            text-align: center;
+            color: white;
+        }
+        .name {
+            text-align: center;
+            font-size: 25px;
+            color: hotpink;
+        }
+        .invisible {
+            display: none;
+        }
+        #fact {
+            font-size: 20px;
+            color: white;
+            text-align: center;
+
+        }
+
+    </style>
+</head>
+<body>
+<h1>10 FAQS about National Parks</h1>
+
+<dl>
+    <dt class="name">Wrangell National Park</dt>
+    <dd class="invisible" id="fact">This park is a beautiful place to go and explore!!!</dd>
+    <dt class="name">Yellow Stone National Park</dt>
+    <dd class="invisible" id="fact">This park is a beautiful place to go and explore!!!</dd>
+    <dt class="name">Big Bend National Park</dt>
+    <dd class="invisible" id="fact">This park is a beautiful place to go and explore!!!</dd>
+    <dt class="name">Sequoia National Park</dt>
+    <dd class="invisible" id="fact">This park is a beautiful place to go and explore!!!</dd>
+    <dt class="name">Glacier National Park</dt>
+    <dd class="invisible" id="fact">This park is a beautiful place to go and explore!!!</dd>
+    <dt class="name">Badlands National Park</dt>
+    <dd class="invisible" id="fact">This park is a beautiful place to go and explore!!!</dd>
+    <dt class="name">Redlands National Park</dt>
+    <dd class="invisible" id="fact">This park is a beautiful place to go and explore!!!</dd>
+    <dt class="name">Zion National Park</dt>
+    <dd class="invisible" id="fact">This park is a beautiful place to go and explore!!!</dd>
+    <dt class="name">Great Basin National Park</dt>
+    <dd class="invisible" id="fact">This park is a beautiful place to go and explore!!!</dd>
+    <dt class="name">Voyageurs National Park</dt>
+    <dd class="invisible" id="fact">This park is a beautiful place to go and explore!!!</dd>
+</dl>
+
+<script>
+
+
+$("dt").click(function(){
+    $("dd").toggleClass("invisible");
+});
+
+
+
+</script>
+
+</body>
+</html>
