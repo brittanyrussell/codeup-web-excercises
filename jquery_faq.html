@@ -13,6 +13,14 @@
             text-align: center;
             color: white;
         }
+        .fact {
+            font-size: 20px;
+            color: white;
+            text-align: center;
+            list-style-type: none;
+
+        }
+
         .name {
             text-align: center;
             font-size: 25px;
@@ -21,47 +29,98 @@
         .invisible {
             display: none;
         }
-        #fact {
-            font-size: 20px;
-            color: white;
-            text-align: center;
+
+        .highlight {
+            color: black;
+            background-color: yellow;
 
         }
+
+        .button1 {
+            text-align: center;
+        }
+        .button2 {
+            text-align: center;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+        .blue {
+            color: blue;
+        }
+
 
     </style>
 </head>
 <body>
 <h1>10 FAQS about National Parks</h1>
+<div class="button1">
+<button>Get the Facts</button>
+</div>
+<div class="button2">
+<button>Check this out 2nd</button>
+</div>
 
-<dl>
-    <dt class="name">Wrangell National Park</dt>
-    <dd class="invisible" id="fact">This park is a beautiful place to go and explore!!!</dd>
-    <dt class="name">Yellow Stone National Park</dt>
-    <dd class="invisible" id="fact">This park is a beautiful place to go and explore!!!</dd>
-    <dt class="name">Big Bend National Park</dt>
-    <dd class="invisible" id="fact">This park is a beautiful place to go and explore!!!</dd>
-    <dt class="name">Sequoia National Park</dt>
-    <dd class="invisible" id="fact">This park is a beautiful place to go and explore!!!</dd>
-    <dt class="name">Glacier National Park</dt>
-    <dd class="invisible" id="fact">This park is a beautiful place to go and explore!!!</dd>
-    <dt class="name">Badlands National Park</dt>
-    <dd class="invisible" id="fact">This park is a beautiful place to go and explore!!!</dd>
-    <dt class="name">Redlands National Park</dt>
-    <dd class="invisible" id="fact">This park is a beautiful place to go and explore!!!</dd>
-    <dt class="name">Zion National Park</dt>
-    <dd class="invisible" id="fact">This park is a beautiful place to go and explore!!!</dd>
-    <dt class="name">Great Basin National Park</dt>
-    <dd class="invisible" id="fact">This park is a beautiful place to go and explore!!!</dd>
-    <dt class="name">Voyageurs National Park</dt>
-    <dd class="invisible" id="fact">This park is a beautiful place to go and explore!!!</dd>
-</dl>
+
+
+    <h3 class="name">Wrangell National Park</h3>
+    <ul class="grab">
+    <li class="invisible first fact">This park is a beautiful place to go and explore!!!</li>
+        <li class="invisible fact">Wrangell-St. Elias National Park is an 8,323,147 acre park located in Alaska.</li>
+        <li class="invisible fact">Wrangell-St. Elias National Park is larger than the entire country of Switzerland.</li>
+        <li class="invisible make fact">Between 1903 and 1938 the park's center - a boomtown called Kennecott - exploded because of the
+            areas rich copper deposit discovery</li>
+    </ul>
+<h3 class="name">Yellow Stone National Park</h3>
+<ul class="grab">
+    <li class="invisible first fact">This park is a beautiful place to go and explore!!!</li>
+    <li class="invisible fact">Yellowstone was established on March 1, 1872.</li>
+    <li class="invisible fact">Yellowstone has more than 290 waterfalls.</li>
+    <li class="invisible make fact">Yellowstone was the world's first national park</li>
+</ul>
+<h3 class="name">Big Bend National Park</h3>
+<ul class="grab">
+    <li class="invisible first fact">This park is a beautiful place to go and explore!!!</li>
+    <li class="invisible fact">Big Bend National Park is considered to be the largest Chihuahuan Desert protected region in the country.</li>
+    <li class="invisible fact">fBig Bend National Park is home to more than 1200 plant species, including the desert marigold, pink bluebonnets,
+        ocotillo, lechuguilla, and rock nettle</li>
+    <li class="invisible make fact">angford Hot Springs are located in Big Bend National Park. The temperature of the spring is approximately 105 degrees Fahrenheit.</li>
+</ul>
+<h3 class="name">Sequoia National Park</h3>
+<ul class="grab">
+    <li class="invisible first fact">This park is a beautiful place to go and explore!!!</li>
+    <li class="invisible fact">Sequoia National Park was the second national park established in the
+        United States - in 1890. It was established to protect the region's giant trees from logging.</li>
+    <li class="invisible fact">Sequoia trees are naturally fire resistant. They have thick bark that can often protect
+        them from burning down. If they do burn their nutrients are deposited directly into the ground to feed other trees.</li>
+    <li class="invisible make fact black">84% of Sequoia and Kings Canyon National Parks is designated as wilderness. Most of the parks
+        land is not accessible by roadway.</li>
+</ul>
+
+
+
+
 
 <script>
 
 
-$("dt").click(function(){
-    $("dd").toggleClass("invisible");
+$(".button1").click(function(){
+    $("li").toggleClass("invisible");
 });
+
+$(".button2").click(function () {
+    $(".make").toggleClass("highlight");
+});
+
+$("h3").click(function(){
+    $("li").toggleClass("bold");
+});
+
+$(".fact").click(function(){
+    $(".first").toggleClass("blue");
+});
+
 
 
 
