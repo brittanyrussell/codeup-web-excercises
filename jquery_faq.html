@@ -52,8 +52,8 @@
             font-weight: bold;
         }
 
-        .blue {
-            color: blue;
+        .lightpink {
+            color: lightpink;
         }
 
         .picture1 {
@@ -82,74 +82,94 @@
             text-align: center;
             color: white;
         }
+        .newsletter{
+            display: none;
+        }
 
-        .buttoncenter {
+        .news {
             text-align: center;
         }
+        h2 {
+            text-align: center;
+            color: red;
+        }
+        .signup2 {
+            display: none;
+        }
+
+
 
     </style>
 </head>
 <body>
 <main class="container">
-    <h1>10 FAQS about National Parks</h1>
-    <div class="btn1">
-        <button type="button" class="btn btn-dark">Get the Facts</button>
+    <div class="news">
+        <h1>Would you like to sign up for our newsletter?</h1>
+        <span style="color: white; text-align: center; font-size: 30px;">X</span>
     </div>
+    <div class="signup2">
+        <h2>Would you like to sign up for our website?</h2>
+        <div class="btn1">
+        <button class="btn btn-dark btn1">Register</button>
+        <button class="btn btn-dark btn1">No thanks</button>
+        </div>
+    </div>
+    <h1>10 FAQS about National Parks</h1>
     <br>
     <div class="btn2">
-        <button type="button" class="btn btn-dark">Check this out 2nd</button>
+        <button type="button" class="btn btn-dark">Click me!</button>
     </div>
     <br>
     <br>
 
 
-    <h3 class="name">Wrangell National Park</h3>
-    <ul class="grab">
-        <li class="invisible first fact">This park is a beautiful place to go and explore!!!</li>
-        <li class="invisible fact">Wrangell-St. Elias National Park is an 8,323,147 acre park located in Alaska.</li>
-        <li class="invisible fact">Wrangell-St. Elias National Park is larger than the entire country of Switzerland.
+    <h3 class="name wrangell">Wrangell National Park</h3>
+    <ul class="grab1">
+        <li class="invisible first fact wrangell1">This park is a beautiful place to go and explore!!!</li>
+        <li class="invisible fact wrangell1">Wrangell-St. Elias National Park is an 8,323,147 acre park located in Alaska.</li>
+        <li class="invisible fact wrangell1">Wrangell-St. Elias National Park is larger than the entire country of Switzerland.
         </li>
-        <li class="invisible make fact">Between 1903 and 1938 the park's center - a boomtown called Kennecott - exploded
+        <li class="invisible make fact wrangell1">Between 1903 and 1938 the park's center - a boomtown called Kennecott - exploded
             because of the
             areas rich copper deposit discovery
         </li>
     </ul>
     <br>
-    <h3 class="name">Yellow Stone National Park</h3>
-    <ul class="grab">
-        <li class="invisible first fact">This park is a beautiful place to go and explore!!!</li>
-        <li class="invisible fact">Yellowstone was established on March 1, 1872.</li>
-        <li class="invisible fact">Yellowstone has more than 290 waterfalls.</li>
-        <li class="invisible make fact">Yellowstone was the world's first national park</li>
+    <h3 class="name yellow">Yellow Stone National Park</h3>
+    <ul class="grab2">
+        <li class="invisible first fact yellow1">This park is a beautiful place to go and explore!!!</li>
+        <li class="invisible fact yellow1">Yellowstone was established on March 1, 1872.</li>
+        <li class="invisible fact yellow1">Yellowstone has more than 290 waterfalls.</li>
+        <li class="invisible make fact yellow1">Yellowstone was the world's first national park</li>
     </ul>
     <br>
-    <h3 class="name">Big Bend National Park</h3>
-    <ul class="grab">
-        <li class="invisible first fact">This park is a beautiful place to go and explore!!!</li>
-        <li class="invisible fact">Big Bend National Park is considered to be the largest Chihuahuan Desert protected
+    <h3 class="name big">Big Bend National Park</h3>
+    <ul class="grab3">
+        <li class="invisible first fact big1">This park is a beautiful place to go and explore!!!</li>
+        <li class="invisible fact big1">Big Bend National Park is considered to be the largest Chihuahuan Desert protected
             region in the country.
         </li>
-        <li class="invisible fact">fBig Bend National Park is home to more than 1200 plant species, including the desert
+        <li class="invisible fact big1">fBig Bend National Park is home to more than 1200 plant species, including the desert
             marigold, pink bluebonnets,
             ocotillo, lechuguilla, and rock nettle
         </li>
-        <li class="invisible make fact">angford Hot Springs are located in Big Bend National Park. The temperature of
+        <li class="invisible make fact big1">angford Hot Springs are located in Big Bend National Park. The temperature of
             the spring is approximately 105 degrees Fahrenheit.
         </li>
     </ul>
     <br>
-    <h3 class="name">Sequoia National Park</h3>
-    <ul class="grab">
-        <li class="invisible first fact">This park is a beautiful place to go and explore!!!</li>
-        <li class="invisible fact">Sequoia National Park was the second national park established in the
+    <h3 class="name sequoia">Sequoia National Park</h3>
+    <ul class="grab4">
+        <li class="invisible first fact sequoia1">This park is a beautiful place to go and explore!!!</li>
+        <li class="invisible fact sequoia1">Sequoia National Park was the second national park established in the
             United States - in 1890. It was established to protect the region's giant trees from logging.
         </li>
-        <li class="invisible fact">Sequoia trees are naturally fire resistant. They have thick bark that can often
+        <li class="invisible fact sequoia1">Sequoia trees are naturally fire resistant. They have thick bark that can often
             protect
             them from burning down. If they do burn their nutrients are deposited directly into the ground to feed other
             trees.
         </li>
-        <li class="invisible make fact black">84% of Sequoia and Kings Canyon National Parks is designated as
+        <li class="invisible make fact black sequoia1">84% of Sequoia and Kings Canyon National Parks is designated as
             wilderness. Most of the parks
             land is not accessible by roadway.
         </li>
@@ -164,24 +184,18 @@
         <!--Using Bootstrap-->
         <div class="col-md-4">
             <div class="frame picture1"></div>
-            <br>
-            <div class="buttoncenter">
             <button id="leftSwapBtn" class="pictureBtn btn btn-dark">Swap</button>
-            </div>
+
         </div>
         <div class="col-md-4">
             <div class="frame picture2"></div>
-            <br>
-            <div class="buttoncenter">
             <button id="middleSwapBtn" class="pictureBtn btn btn-dark">Swap</button>
-            </div>
+
         </div>
         <div class="col-md-4">
             <div class="frame picture3"></div>
-            <br>
-            <div class="buttoncenter">
             <button id="rightSwapBtn" class="pictureBtn btn btn-dark">Swap</button>
-            </div>
+
         </div>
     </div>
 
@@ -190,14 +204,27 @@
 
 
 <script>
+    $(".signup2").fadeIn(8000);
+    $(".signup2").fadeOut(16000);
 
-
-    $(".btn1").click(function () {
-        $("li").toggleClass("invisible");
+    $(".wrangell").click(function () {
+        $(".wrangell1").toggleClass("invisible");
+    });
+    $(".yellow").click(function () {
+        $(".yellow1").toggleClass("invisible");
+    });
+    $(".big").click(function () {
+        $(".big1").toggleClass("invisible");
+    });
+    $(".sequoia").click(function () {
+        $(".sequoia1").toggleClass("invisible");
     });
 
     $(".btn2").click(function () {
         $(".make").toggleClass("highlight");
+    });
+    $(".btn1").click(function () {
+        $(".signup2").toggleClass("invisible");
     });
 
     $("h3").click(function () {
@@ -205,7 +232,11 @@
     });
 
     $(".fact").click(function () {
-        $(".first").toggleClass("blue");
+        $(".first").toggleClass("lightpink");
+    });
+
+    $("span").click(function () {
+        $(".news").toggleClass("newsletter");
     });
 
     $('#leftSwapBtn').click(function () {
