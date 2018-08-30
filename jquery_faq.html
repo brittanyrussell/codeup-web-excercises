@@ -238,27 +238,50 @@
     $("span").click(function () {
         $(".news").toggleClass("newsletter");
     });
+    //    $(document).ready.setInterval(function() {
+    //             var oldClass = $(this).prev().attr("class").split(" ")[1];
+    //             var newClass = $(this).parent().next().children().first().attr("class").split(" ")[1];
+    //             $(this).prev().attr("class", "frame " + newClass);
+    //             $(this).parent().next().children().first().attr("class", "frame " + oldClass)
+    //     },1000);
+    // $(document).ready.setInterval(function() {
+    //     var choice = Math.floor(Math.random() * (1 - 0 + 1)) + 0;
+    //         var frameChoice = (choice) ? $(this).parent().prev() : $(this).parent().next();
+    //         var oldClass = $(this).prev().attr("class").split(" ")[1];
+    //         var newClass = frameChoice.children().first().attr("class").split(" ")[1];
+    //         $(this).prev().attr("class", "frame " + newClass);
+    //         frameChoice.children().first().attr("class", "frame " + oldClass)
+    // },1000);
+    // $(document).ready.setInterval(function() {
+    //     var oldClass = $(this).prev().attr("class").split(" ")[1];
+    //         var newClass = $(this).parent().prev().children().first().attr("class").split(" ")[1];
+    //         $(this).prev().attr("class", "frame " + newClass);
+    //         $(this).parent().prev().children().first().attr("class", "frame " + oldClass)
+    //
+    // },1000);
 
-    $('#leftSwapBtn').click(function () {
-        var oldClass = $(this).prev().attr("class").split(" ")[1];
-        var newClass = $(this).parent().next().children().first().attr("class").split(" ")[1];
-        $(this).prev().attr("class", "frame " + newClass);
-        $(this).parent().next().children().first().attr("class", "frame " + oldClass)
-    });
-    $('#middleSwapBtn').click(function () {
-        var choice = Math.floor(Math.random() * (1 - 0 + 1)) + 0;
-        var frameChoice = (choice) ? $(this).parent().prev() : $(this).parent().next();
-        var oldClass = $(this).prev().attr("class").split(" ")[1];
-        var newClass = frameChoice.children().first().attr("class").split(" ")[1];
-        $(this).prev().attr("class", "frame " + newClass);
-        frameChoice.children().first().attr("class", "frame " + oldClass)
-    });
-    $('#rightSwapBtn').click(function () {
-        var oldClass = $(this).prev().attr("class").split(" ")[1];
-        var newClass = $(this).parent().prev().children().first().attr("class").split(" ")[1];
-        $(this).prev().attr("class", "frame " + newClass);
-        $(this).parent().prev().children().first().attr("class", "frame " + oldClass)
-    });
+
+        $('#leftSwapBtn').click(function () {
+            var oldClass = $(this).prev().attr("class").split(" ")[1];
+            var newClass = $(this).parent().next().children().first().attr("class").split(" ")[1];
+            $(this).prev().attr("class", "frame " + newClass);
+            $(this).parent().next().children().first().attr("class", "frame " + oldClass)
+        });
+        $('#middleSwapBtn').click(function () {
+            var choice = Math.floor(Math.random() * (1 - 0 + 1)) + 0;
+            var frameChoice = (choice) ? $(this).parent().prev() : $(this).parent().next();
+            var oldClass = $(this).prev().attr("class").split(" ")[1];
+            var newClass = frameChoice.children().first().attr("class").split(" ")[1];
+            $(this).prev().attr("class", "frame " + newClass);
+            frameChoice.children().first().attr("class", "frame " + oldClass)
+        });
+        $('#rightSwapBtn').click(function () {
+            var oldClass = $(this).prev().attr("class").split(" ")[1];
+            var newClass = $(this).parent().prev().children().first().attr("class").split(" ")[1];
+            $(this).prev().attr("class", "frame " + newClass);
+            $(this).parent().prev().children().first().attr("class", "frame " + oldClass)
+        });
+
 
 
 </script>
