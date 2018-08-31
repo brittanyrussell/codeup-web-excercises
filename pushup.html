@@ -280,34 +280,62 @@
 //
 //     console.log(padArray(testArray, 7, "d"));
 
+    //
+    // var car = {
+    //     make: ford,
+    //     model: mustang,
+    //     year: 1994,
+    //     color: red,
+    //     options: {
+    //         type: convertible
+    //     },
+    //     acccelerarte: function (level) {
+    //         this.speed += level * 3;
+    //     },
+    //     brake: function (level) {
+    //         this.speed -= level * 5;
+    //     },
+    //     speed: 0,
+    //     mpg: 16,
+    //     mileage: 204000,
+    //     honk: function (angry) {
+    //         if (angry)
+    //             speaker.play("sounds/HONK.wav");
+    //         else
+    //             speaker.play("sounds/beep.wav")
+    //     }
+    //
+    // }
+    //
+    // console.log(car)
 
-    var car = {
-        make: ford,
-        model: mustang,
-        year: 1994,
-        color: red,
-        options: {
-            type: convertible
-        },
-        acccelerarte: function (level) {
-            this.speed += level * 3;
-        },
-        brake: function (level) {
-            this.speed -= level * 5;
-        },
-        speed: 0,
-        mpg: 16,
-        mileage: 204000,
-        honk: function (angry) {
-            if (angry)
-                speaker.play("sounds/HONK.wav");
-            else
-                speaker.play("sounds/beep.wav")
+    //
+    // function factorial(num) {
+    //     var answer = 1;
+    //     for (var i = num; i>0; i--) {
+    //         answer *= i;
+    //     }
+    //     return answer;
+    // }
+    //
+    // console.log(factorial(7));
+
+
+    function factorial(n) {
+        if (n==0) {
+            return 1;
+        } else {
+            return factorial (n-1) * n;
         }
-
     }
 
-    console.log(car)
+    console.log(factorial(7));
+    console.log(factorial(6));
+    console.log(factorial(5));
+    console.log(factorial(4));
+    console.log(factorial(3));
+    console.log(factorial(2));
+    console.log(factorial(1));
 </script>
 </body>
 </html>
