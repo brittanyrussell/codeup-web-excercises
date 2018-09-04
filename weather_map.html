@@ -44,14 +44,10 @@
         </div>
 
 </div>
-
+ <div class="container">
     <div class="row" id="map" style="width: 100%; height: 680px;"/>
-
-
-
-
     </div>
-
+</div>
 
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <br><br><br><br><br><br><br><br><br><br>
@@ -83,10 +79,12 @@
 
             var condition = "<div>";
             condition += Math.round(data.main.temp_max) + "/" + Math.round(data.main.temp_min) + "<br>";
+            condition += "<img src='http://openweathermap.org/img/w/11d.png'/>" + "<br>",
             condition += "clouds: " + data.weather[0].description + "<br>";
             condition += "humidity: " + data.main.humidity + "<br>";
             condition += "wind: " + Math.round(data.wind.speed) + "<br>";
             condition += "pressure: " + data.main.pressure + "<br>";
+
             condition += "</div>";
             $("#day1").append(condition);
 
@@ -102,6 +100,7 @@
 
             var condition2 = "<div>";
             condition2 += Math.round(data.list[5].main.temp_max) + "/" + Math.round(data.list[5].main.temp_min) + "<br>";
+            condition2 += "<img src='http://openweathermap.org/img/w/10d.png'/>" + "<br>",
             condition2 += "clouds: " + data.list[5].weather[0].description + "<br>";
             condition2 += "humidity: " + data.list[5].main.humidity + "<br>";
             condition2 += "wind: " + Math.round(data.list[5].wind.speed) + "<br>";
@@ -122,6 +121,7 @@
 
             var condition3 = "<div>";
             condition3 += Math.round(data.list[13].main.temp_max) + "/" + Math.round(data.list[13].main.temp_min) + "<br>";
+            condition3 += "<img src='http://openweathermap.org/img/w/10d.png'/>" + "<br>",
             condition3 += "clouds: " + data.list[13].weather[0].description + "<br>";
             condition3 += "humidity: " + data.list[13].main.humidity + "<br>";
             condition3 += "wind: " + Math.round(data.list[13].wind.speed) + "<br>";
