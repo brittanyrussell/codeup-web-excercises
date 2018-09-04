@@ -78,7 +78,7 @@
             console.log(data);
 
             var condition = "<div>";
-            condition += Math.round(data.main.temp_max) + "/" + Math.round(data.main.temp_min) + "<br>";
+            condition += Math.round(data.main.temp_max) + "&deg;" + "/" + Math.round(data.main.temp_min) + "&deg;" + "<br>";
             condition += "<img src='http://openweathermap.org/img/w/11d.png'/>" + "<br>",
             condition += "clouds: " + data.weather[0].description + "<br>";
             condition += "humidity: " + data.main.humidity + "<br>";
@@ -99,7 +99,7 @@
             console.log(data);
 
             var condition2 = "<div>";
-            condition2 += Math.round(data.list[5].main.temp_max) + "/" + Math.round(data.list[5].main.temp_min) + "<br>";
+            condition2 += Math.round(data.list[5].main.temp_max) + "&deg;" + "/" + Math.round(data.list[5].main.temp_min) + "&deg;" + "<br>";
             condition2 += "<img src='http://openweathermap.org/img/w/10d.png'/>" + "<br>",
             condition2 += "clouds: " + data.list[5].weather[0].description + "<br>";
             condition2 += "humidity: " + data.list[5].main.humidity + "<br>";
@@ -120,7 +120,7 @@
             console.log(data);
 
             var condition3 = "<div>";
-            condition3 += Math.round(data.list[13].main.temp_max) + "/" + Math.round(data.list[13].main.temp_min) + "<br>";
+            condition3 += Math.round(data.list[13].main.temp_max) + "&deg;" +"/" + Math.round(data.list[13].main.temp_min) + "&deg;" + "<br>";
             condition3 += "<img src='http://openweathermap.org/img/w/10d.png'/>" + "<br>",
             condition3 += "clouds: " + data.list[13].weather[0].description + "<br>";
             condition3 += "humidity: " + data.list[13].main.humidity + "<br>";
