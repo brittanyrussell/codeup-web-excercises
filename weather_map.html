@@ -10,24 +10,45 @@
     <title>Weather Map Project</title>
 
     <!-- Bootstrap CSS -->
-    <link
-            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-            crossorigin="anonymous">
+    <!--<link-->
+            <!--href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"-->
+            <!--rel="stylesheet"-->
+            <!--integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"-->
+            <!--crossorigin="anonymous">-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
 
 </head>
 <body>
+<div class="container bg-primary">
+    <div class="row">
+<h1>Weather Application</h1>
+    </div>
+    <br>
+    <br>
+    <br>
+<div class="row">
+    <div id="day1" class="col border bg-secondary">
+    </div>
 
-<main class="container">
 
-    <h1>Weather Map Project Lecture</h1>
+        <div id="day2" class="col border bg-secondary">
 
-</main>
+        </div>
+        <div id="day3" class="col border bg-secondary">
+
+        </div>
+
+</div>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 <!-- jQuery Version 2.2.4 -->
 <script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
 
 <!-- Bootstrap JS -->
 <script
@@ -37,19 +58,103 @@
 
 <!-- Custom JS -->
 <script>
-    $(document).ready(function() {
+
         "use strict";
-        // console.log the humidity of the 2nd day
-        var location = 4726206;
-        var jqXhr = $.get('http://api.openweathermap.org/data/2.5/forecast', {
-            APPID: '7f8e3aa0aad113510e0c1eaafd1c17b8',
-            id: location,
-            units: 'imperial'
+        $.get("http://api.openweathermap.org/data/2.5/weather?id=4726206&APPID=582195b0c09da08874439acf1763acd6",
+            {
+            APPID: "582195b0c09da08874439acf1763acd6",
+            lat: 29.423017,
+            lon: -98.48527,
+            units: "imperial"
+        }).done(function (data) {
+            console.log(data);
+
+            var condition = "<div>";
+            condition += Math.round(data.main.temp_max) + "/" + Math.round(data.main.temp_min) + "<br>";
+            condition += "clouds: " + data.weather[0].description + "<br>";
+            condition += "humidity: " + data.main.humidity + "<br>";
+            condition += "wind: " + Math.round(data.wind.speed) + "<br>";
+            condition += "pressure: " + data.main.pressure + "<br>";
+            condition += "</div>";
+            $("#day1").append(condition);
+
         });
-        jqXhr.done(function(data) {
-            console.log(data.list[8].main.humidity);
+
+        $.get("http://api.openweathermap.org/data/2.5/forecast?id=4726206&APPID=582195b0c09da08874439acf1763acd6", {
+            APPID: "582195b0c09da08874439acf1763acd6",
+            lat: 29.423017,
+            lon: -98.48527,
+            units: "imperial"
+        }).done(function (data) {
+            console.log(data);
+
+            var condition2 = "<div>";
+            condition2 += Math.round(data.list[5].main.temp_max) + "/" + Math.round(data.list[5].main.temp_min) + "<br>";
+            condition2 += "clouds: " + data.list[5].weather[0].description + "<br>";
+            condition2 += "humidity: " + data.list[5].main.humidity + "<br>";
+            condition2 += "wind: " + Math.round(data.list[5].wind.speed) + "<br>";
+            condition2 += "pressure: " + data.list[5].main.pressure + "<br>";
+            condition2 += "</div>";
+
+            $("#day2").append(condition2);
+
         });
-    });
+
+        $.get("http://api.openweathermap.org/data/2.5/forecast?id=4726206&APPID=582195b0c09da08874439acf1763acd6", {
+            APPID: "582195b0c09da08874439acf1763acd6",
+            lat: 29.423017,
+            lon: -98.48527,
+            units: "imperial"
+        }).done(function (data) {
+            console.log(data);
+
+            var condition3 = "<div>";
+            condition3 += Math.round(data.list[13].main.temp_max) + "/" + Math.round(data.list[13].main.temp_min) + "<br>";
+            condition3 += "clouds: " + data.list[13].weather[0].description + "<br>";
+            condition3 += "humidity: " + data.list[13].main.humidity + "<br>";
+            condition3 += "wind: " + Math.round(data.list[13].wind.speed) + "<br>";
+            condition3 += "pressure: " + data.list[13].main.pressure + "<br>";
+            condition3 += "</div>";
+
+            $("#day3").append(condition3);
+
+        });
+
+
+
+
+        // var onSuccess = function (coord) {
+        //     var html = "";
+        //
+        //     $("#insertProducts").empty();
+        //
+        //     tools.forEach(function (tool) {
+        //
+        //         html += "<tr>" +
+        //             "<td>" + coord.title + "</td>" +
+        //             // "<td>" + tool.quantity + "</td>" +
+        //             // "<td>" + tool.price + "</td>" +
+        //             // "<td>" + tool.categories + "</td>" +
+        //             "</tr>";
+        //     });
+        //
+        //     $("#insertProducts").append(html);
+        // };
+        //
+        // function loadData() {
+        //     $.get("data/inventory.json").done(onSuccess);
+        // };
+        // loadData()
+
+
+
+
+
+
+
+
+
+
 </script>
 
 </body>
