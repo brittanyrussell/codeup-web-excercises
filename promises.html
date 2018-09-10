@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Promises</title>
+    <script src="js/promises.js"></script>
+</head>
+<body>
+
+<h1>Promises</h1>
+
+<p>Promises are a way of designating whether or not something has occured</p>
+
+<ol>
+    <li>Pending</li>
+    <li>Accepted</li>
+    <li>Rejected</li>
+</ol>
+
+
+<script>
+    // const myPromise = new Promise((resolve, reject) => {
+    //     setTimeout(function (){
+    //         if (Math.random() > 0.5) {
+    //             resolve("everything is gold");
+    //         } else {
+    //             reject("no bueno");
+    //         }
+    //
+    //     }, 3000);
+    // });
+    //
+    // console.log(myPromise);
+    //
+    // let batteryPromise = navigator.getBattery();
+    //
+    // batteryPromise.then(function(battery) {
+    //     console.log(battery);
+    // });
+    //
+    // batteryPromise.catch((battery) => {
+    //     console.log(battery);
+    // });
+
+
+    // function makeRequest() {
+    //     return new Promise((resolve, reject) => {
+    //         setTimeout(() => {
+    //             if (Math.random() > 0.1) {
+    //                 resolve('Here is your data: ...');
+    //             } else {
+    //                 reject('Network Connection Error!');
+    //             }
+    //         }, 1500);
+    //     });
+    // }
+    //
+    // const request = makeRequest();
+    // console.log(request); // pending promise
+    // request.then(data => console.log('Promise resolved!', data));
+    // // if resolved, will log "Promise resolved!" and "Here is your data: ..."
+    // request.catch(error => console.log('Promise rejected!', error));
+    // // if rejected, will log "Promise rejected!" and "Network Connection Error!"
+    //
+    // function countToOneHundredMillion () {
+    //     return new Promise((resolve, reject) => {
+    //     for (var i = 1; i <= 100000000; i++) {
+    //         console.log(i);
+    //
+    //     } if (i>= 100000000) {
+    //     resolve("we count to one hundred billion, yay!");
+    //
+    //         } else {
+    //         reject("we did not count to one hundred billion");
+    //         }
+    //     });
+    // }
+    //
+    // countToOneHundredMillion().then(data => {
+    //     console.log(data);
+    // });
+
+    // const userGaveUsername = () => {
+    //     return new Promise((resolve, reject) => {
+    //         let username = prompt("Please input your username");
+    //         if (!username) {
+    //             reject ("user did not provide a username");
+    //         } else {
+    //             resolve(`User provided a username of ${username}`)
+    //         }
+    //
+    //     });
+    // };
+    //
+    // userGaveUsername().then(data => console.log(data));
+    // userGaveUsername().catch(error => console.log(error));
+
+</script>
+</body>
+</html>
