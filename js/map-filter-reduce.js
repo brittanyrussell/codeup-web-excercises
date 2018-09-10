@@ -42,5 +42,29 @@ console.log(users.filter(user => user.languages.length >= 3));
 
 console.log(users.map(user => user.email));
 
+const totalExperience = users.reduce((accumulation, user) => {
+    return accumulation + user.yearsOfExperience;
+}, 0);
+
+console.log(totalExperience);
+console.log(totalExperience / users.length);
+
+
+console.log(users.reduce((longest, user) => {
+    if (user.email.length > longest.length) return user.email;
+    else return longest;
+    }, ""
+));
+
+
+console.log(users.reduce((message, user, i) => {
+    if (i < users.length-1)
+    return `${message} ${user.name},`;
+    else return `${message} and ${user.name}.`;
+}, "Your instructors are: "));
+
+
+
+
 
 
