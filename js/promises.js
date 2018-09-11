@@ -17,4 +17,4 @@ fetch(url).then(response => {
     });
 });
 
-fetch(url, {headers: {'Authorization': 'bb87a281431739091f6f05a197f6576a093f536e'}});
+// fetch(url, {headers: {'Authorization': 'bb87a281431739091f6f05a197f6576a093f536e'}});
